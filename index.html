@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Language Translator</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- INPUT CARD -->
+
+    <div class="card input-wrapper">
+
+      <div class="from">
+
+        <span class="heading">
+          From :
+        </span>
+
+        <select id="source-language">
+
+          <option value="en">
+            English
+          </option>
+
+          <option value="hi">
+            Hindi
+          </option>
+
+          <option value="fr">
+            French
+          </option>
+
+          <option value="es">
+            Spanish
+          </option>
+
+          <option value="de">
+            German
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- INPUT TEXT -->
+
+      <div class="text-area">
+
+        <textarea
+          id="input-text"
+          cols="30"
+          rows="10"
+          placeholder="Enter text">
+        </textarea>
+
+        <div class="chars">
+          <span id="input-chars">0</span>
+          / 5000
+        </div>
+
+      </div>
+
+
+      <!-- FILE UPLOAD -->
+
+      <div class="card-bottom">
+
+        <p>Or choose your document</p>
+
+        <label for="upload-document">
+
+          <span id="upload-title">
+            Choose File
+          </span>
+
+          <ion-icon
+            name="cloud-upload-outline">
+          </ion-icon>
+
+          <input
+            type="file"
+            id="upload-document"
+            hidden
+          />
+
+        </label>
+
+      </div>
+
+    </div>
+
+
+    <!-- CENTER -->
+
+    <div class="center">
+
+      <div class="swap-position">
+
+        <ion-icon
+          name="swap-horizontal-outline">
+        </ion-icon>
+
+      </div>
+
+      <button
+        class="translate-btn"
+        onclick="translateText()">
+
+        Translate
+
+      </button>
+
+    </div>
+
+
+    <!-- OUTPUT CARD -->
+
+    <div class="card output-wrapper">
+
+      <div class="to">
+
+        <span class="heading">
+          To :
+        </span>
+
+        <select id="target-language">
+
+          <option value="hi">
+            Hindi
+          </option>
+
+          <option value="en">
+            English
+          </option>
+
+          <option value="fr">
+            French
+          </option>
+
+          <option value="es">
+            Spanish
+          </option>
+
+          <option value="de">
+            German
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- OUTPUT TEXT -->
+
+      <textarea
+        id="output-text"
+        cols="30"
+        rows="10"
+        placeholder="Translation"
+        disabled>
+      </textarea>
+
+
+      <!-- DOWNLOAD -->
+
+      <div class="card-bottom">
+
+        <p>
+          Download as a document
+        </p>
+
+        <button id="download-btn">
+
+          <span>Download</span>
+
+          <ion-icon
+            name="cloud-download-outline">
+          </ion-icon>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer container">
+
+    <p class="heading">
+      Created by Madhur Bharambe
+    </p>
+
+    <div class="mode">
+
+      <label
+        class="switch toggle"
+        for="dark-mode-btn">
+
+        <input
+          type="checkbox"
+          class="toggle-checkbox"
+          id="dark-mode-btn"
+        />
+
+        <span class="slider"></span>
+
+      </label>
+
+    </div>
+
+  </footer>
+
+
+  <!-- SCRIPT -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
