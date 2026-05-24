@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //  Language Translation Tool
 
 A simple and user-friendly web application that translates text between different languages using a Translation API.
@@ -70,3 +71,7 @@ https://libretranslate.de/
 - More language support
 
 ---
+=======
+# language-translator
+Language Translation Tool using HTML, CSS, JavaScript, and Translation API.
+>>>>>>> bf4018bffa14f41707aadf0852efff972fcce94e
